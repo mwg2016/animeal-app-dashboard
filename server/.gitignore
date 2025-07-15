@@ -11,6 +11,7 @@ node_modules
 all_shopify_customers.json
 dist
 dist-ssr
+.env
 *.local
 
 # Editor directories and files
