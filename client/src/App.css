@@ -1,0 +1,30 @@
+/* Custom Scrollbar Styles */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #B72765;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animate-slide-in {
+  animation: slideInDown 0.7s ease-out forwards;
+}
