@@ -4,7 +4,6 @@ const knex = require('./config/db');
 const router  = require('./routes/vet.route');
 const app = express();
 const PORT = 3000;
-const customerRouter = require('./routes/customer.route');
 
 app.use(express.static('public'));
 
@@ -15,7 +14,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/admin', router)
-app.use('/customers', customerRouter)
 
 // Testing the database connection with Knex
 knex.raw('SELECT 1')
